@@ -63,4 +63,10 @@ const silverEarrings=document.getElementById("silver-earrings")
 const goldEarrings=document.getElementById("gold-earrings")
 const charmCompanions=document.getElementById("charm-companions")
 
+const charmInputs=document.getElementsByClassName("charm-input")
+const charmButton=document.getElementById("charm-button")
 
+for (const el of charmInputs) {
+  el.addEventListener ("input", e=>{
+    el.setAttribute("value", `${el.value}`)})
+}
