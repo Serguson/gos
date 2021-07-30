@@ -1,6 +1,6 @@
 const tabEl = document.getElementsByClassName("tab-el");
 const tabElActive=document.getElementsByClassName("tab-el-active");
-const tabContent=document.getElementByClassName("tab-content");
+const tabContent=document.getElementsByClassName("tab-content");
 const tabContentActive = document.getElementsByClassName("tab-content-active");
 const intimacy = document.getElementById("intimacy");
 const charm = document.getElementById("charm");
