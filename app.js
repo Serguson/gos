@@ -37,11 +37,17 @@ const vip=document.getElementById("vip");
 
 const intimacyInputs=document.getElementsByClassName("intimacy-input")
 
+const intimacyButton=document.getElementById("intimacy-button")
+let result = 0
+
 for (const el of intimacyInputs) {
   el.addEventListener("input", e=>{
     el.setAttribute("value", `${el.value}`)})
 }
+intimacyButton.addEventListener("click", e=>{
+  result = Number(intimacyChest.value)+Number(intimacyPack.value);
+  console.log(result);})
 
-const result = Number(intimacyChest.value)+Number(intimacyPack.value)
+
 
 
