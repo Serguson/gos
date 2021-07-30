@@ -34,5 +34,14 @@ const energyOrbs = document.getElementById("energy-orbs");
 const fortune = document.getElementById("fortune");
 const silverNecklace=document.getElementById("silver-necklace");
 const vip=document.getElementById("vip");
-                              
+
+const boxes=document.getElementsByClassName("box")
+
+for (const el of boxes) {
+  boxes.closest("input").addEventListener("input", e=>{
+    console.log(input.value)})
+}
+
 const result = Number(intimacyChest.value)+Number(intimacyPack.value)
+
+
