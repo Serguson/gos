@@ -115,8 +115,9 @@ h2{
 }
 
 #charm-button{
-    grid-column: 2 / 4 ;
-    grid-row: 4;
+    grid-column: 3/5;
+    grid-row: 3;
+}
 }
 
 #intimacy-button{
