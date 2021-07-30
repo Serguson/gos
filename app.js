@@ -1,3 +1,4 @@
+//Switching Tabs
 const tabEl = document.getElementsByClassName("tab-el");
 const tabElActive=document.getElementsByClassName("tab-el-active");
 const tabContent=document.getElementsByClassName("tab-content");
