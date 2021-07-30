@@ -17,3 +17,21 @@ for (const el of tabEl) {el.addEventListener("click", e=>{
 })
 }
 
+//Calculate Intimacy
+const intimacyChest = document.getElementById("intimacy-chest");
+const intimacyPack=document.getElementById("intimacy-pack");
+const agateBracelet=document.getElementById("agate-bracelet");
+const emeraldBracelet=document.getElementById("emerald-bracelet");
+const braceletChest=document.getElementById("bracelet-chest");
+const lazuriteNecklace=document.getElementById("lazurite-necklace");
+const carmelianNecklace=document.getElementById("carmelian-necklace");
+const blackDiamondNecklace=document.getElementById("black-diamond-necklace");
+const agateRing = document.getElementById("agate-ring");
+const emeraldRing = document.getElementById("emerald-ring");
+const companions = document.getElementById("companions");
+const amulet = document.getElementById("amulet");
+const energyOrbs = document.getElementById("energy-orbs");
+const fortune = document.getElementById("fortune");
+const silverNecklace=document.getElementById("silver-necklace");
+const vip=document.getElementById("vip");
+                              
