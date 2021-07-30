@@ -25,10 +25,12 @@ body {
     border-radius: 15px 15px 0 0;
     margin-right: 2px;
     padding:1.5rem 2rem;
+    display:none;
 }
 .tab-el-active {
     background: #fff;
     margin-left:0px;
+    display: block;
 }
 
 .tab-link {
