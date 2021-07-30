@@ -36,17 +36,15 @@ const silverNecklace=document.getElementById("silver-necklace");
 const vip=document.getElementById("intimacy-vip");
 
 const intimacyInputs=document.getElementsByClassName("intimacy-input")
-
 const intimacyButton=document.getElementById("intimacy-button")
 let result = 0
+
+//TODO Destrukturyzacja tablicy values
 
 for (const el of intimacyInputs) {
   el.addEventListener("input", e=>{
     el.setAttribute("value", `${el.value}`)})
 }
-intimacyButton.addEventListener("click", e=>{
-  result = Number(intimacyChest.value)+Number(intimacyPack.value);
-  console.log(result);})
 
 //Calculate Charm
 
