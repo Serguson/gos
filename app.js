@@ -35,3 +35,4 @@ const fortune = document.getElementById("fortune");
 const silverNecklace=document.getElementById("silver-necklace");
 const vip=document.getElementById("vip");
                               
+const result = intimacyChest.value+intimacyPack.value
