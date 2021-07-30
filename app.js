@@ -28,12 +28,12 @@ const carmelianNecklace=document.getElementById("carmelian-necklace");
 const blackDiamondNecklace=document.getElementById("black-diamond-necklace");
 const agateRing = document.getElementById("agate-ring");
 const emeraldRing = document.getElementById("emerald-ring");
-const companions = document.getElementById("companions");
-const amulet = document.getElementById("amulet");
-const energyOrbs = document.getElementById("energy-orbs");
-const fortune = document.getElementById("fortune");
+const companions = document.getElementById("intimacy-companions");
+const amulet = document.getElementById("intimacy-amulet");
+const energyOrbs = document.getElementById("intimacy-energy-orbs");
+const fortune = document.getElementById("intimacy-fortune");
 const silverNecklace=document.getElementById("silver-necklace");
-const vip=document.getElementById("vip");
+const vip=document.getElementById("intimacy-vip");
 
 const intimacyInputs=document.getElementsByClassName("intimacy-input")
 
@@ -48,6 +48,19 @@ intimacyButton.addEventListener("click", e=>{
   result = Number(intimacyChest.value)+Number(intimacyPack.value);
   console.log(result);})
 
+//Calculate Charm
 
+const charmChest=document.getElementById("charm-chest")
+const charmPack=document.getElementById("charm-pack")
+const silverHairpin=document.getElementById("silver-hairpin")
+const goldHairpin=document.getElementById("gold-hairpin")
+const diamondHairpin=document.getElementById("diamond-hairpin")
+const hairpinChest=document.getElementById("hairpin-chest")
+const jadeBrooch=document.getElementById("jade-brooch")
+const gemstoneBrooch=document.getElementById("gemstone-brooch")
+const diamondBrooch=document.getElementById("diamond-brooch")
+const silverEarrings=document.getElementById("silver-earrings")
+const goldEarrings=document.getElementById("gold-earrings")
+const charmCompanions=document.getElementById("charm-companions")
 
 
