@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <div class="header">
+        <div class="title">
+            <h1>Game of Sultans Calculator</h1>
+        </div>
+        <div class="subtitle">Wybierz, co chcesz policzyć</div>
+    </div>
+
+    <div class="content">
+
+        <div class="tabs">
+            <ul class="tab">
+                <li class="tab-el tab-el-active">
+                    <a href="#urok" class="tab-link">INTIMACY</a>
+                </li>
+                <li class="tab-el">
+                    <a href="#bliskosc" class="tab-link">CHARM</a>
+                </li>
+                <li class="tab-el">
+                    <a href="#talent" class="tab-link">TALENT</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-contents">
+            
+            <div class="tab-content tab-content-active">
+                <div class="tab-title">
+                    <h2>INTIMACY CALCULATOR</h2>
+                    <p>FIll all the fields below, please and then click "calculate".</p>
+                </div>
+                <div class="tab-grid" id="intimacy-grid">
+                    <div class="box">
+                        <img src="images/Intimacy/01. Intimacy Chest.png" class="item" alt="intimacy chest">
+                        <h3>Intimacy Chest</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/Intimacy/02. Intimacy Pack.png" class="item"  alt="intimacy pack">
+                        <h3>Intimacy Pack</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/03. Agate Bracelet.png" class="item"  alt="agate bracelet">
+                        <h3>Agate Bracelet</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/04. Emerald Bracelet.png"  class="item" alt="emerald bracelet">
+                        <h3>Emerald Bracelet</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/05. Bracelet Chest.png" class="item"  alt="bracelet chest">
+                        <h3>Bracelet Chest</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/06. Lazurite Necklace.jpg" class="item"  alt="lazurite necklace">
+                        <h3>Lazurite Necklace</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/07. Carmelian Necklace.jpg" class="item"  alt="carmelian necklace">
+                        <h3>Carmelian Necklace</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/08. Black Diamond Necklace.jpg" class="item"  alt="black diamond necklace">
+                        <h3>Black Diamond Necklace</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/09. Agate Ring.png" class="item"  alt="agate ring">
+                        <h3>Agate Ring</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/10. Emerald RIng.png" class="item"  alt="emerald ring">
+                        <h3>Emerald Ring</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/11.Companions.png" class="item"  alt="companions">
+                        <h3>Companions</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/12. Amulet.png" class="item"  alt="amulet">
+                        <h3>Amulet</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/13. Energy Orbs.png" class="item"  alt="energy orbs">
+                        <h3>Energy Orbs</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/14. Fortune.png" class="item"  alt="fortune">
+                        <h3>Fortune</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/15. Silver Necklace Chest.jpg" class="item"  alt="silver necklace">
+                        <h3>Silver Necklace</h3>
+                        <input type="number" required>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intimacy/16. VIP.png" class="item"  alt="VIP">
+                       <h3>VIP</h3>
+                        <input type="number" required>
+                    </div>
+                    <button type="button" class="grid-button" id="intimacy-button">
+                        <p>CALCULATE</p>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-title">
+                    <h2>CHARM CALCULATOR</h2>
+                    FIll all the fields below, please and then click "calculate".
+                </div>
+                <div class="tab-grid" id="charm-grid">
+                    <div class="box">
+                        <img src="images/charm/01. Charm Chest.jpg" class="item" alt="charm chest">
+                        <h3>Charm Chest</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/02. Charm Pack.jpg" class="item" alt="charm pack">
+                        <h3>Charm Pack</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/03. Silver Hairpin.jpg" class="item" alt="silver hairpin">
+                        <h3>Silver Hairpin</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/04. Gold Hairpin.jpg" class="item" alt="gold hairpin">
+                        <h3>Gold hairpin</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/05. Diamond Haripin.jpg" class="item" alt="diamond hairpin">
+                        <h3>Diamond hairpin</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/06. Hairpin Chest.jpg" class="item" alt="hairpin chest">
+                        <h3>Hairpin Chest</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/07. Jade Brooch.jpg" class="item" alt="jade brooch">
+                        <h3>Jade Brooch</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/08. Gemstone Brooch.jpg" class="item" alt="gemstone brooch">
+                        <h3>Gemstone Brooch</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/09. Diamond Brooch.jpg" class="item" alt="Diamond brooch">
+                        <h3>Diamond Brooch</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/10. Silver Earring.jpg" class="item" alt="silve earrings">
+                        <h3>Silver Earrings</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/11. Gold Earring.jpg" class="item" alt="gold earrings">
+                        <h3>Gold Earrings</h3>
+                        <input type="number" required>
+                    </div> 
+                    <div class="box">
+                        <img src="/images/charm/12. Companions.png" class="item" alt="Companions">
+                        <h3>Companions</h3>
+                        <input type="number" required>
+                    </div>  
+                    <button type="button" class="grid-button" id="charm-button">
+                        <p>CALCULATE</p>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="tab-content">
+                <div class="tab-title" id="talent">
+                    <h2>Kalkulator talentu</h2>
+                    FIll all the fields below, please and then click "calculate".
+                </div>
+                <div class="tab-grid">
+                    lorem ipsum
+                </div>
+           </div>
+            
+        </div>
+
+</div>
+</body>
