@@ -39,7 +39,7 @@ const intimacyInputs=document.getElementsByClassName("intimacy-input")
 
 for (const el of intimacyInputs) {
   el.addEventListener("input", e=>{
-    el.setAttribute("value", "Number(el.value)")})
+    el.setAttribute("value", "el.value")})
 }
 
 const result = Number(intimacyChest.value)+Number(intimacyPack.value)
