@@ -35,11 +35,11 @@ const fortune = document.getElementById("fortune");
 const silverNecklace=document.getElementById("silver-necklace");
 const vip=document.getElementById("vip");
 
-const boxes=document.getElementsByClassName("box")
+const intimacyInputs=document.getElementsByClassName("intimacy-input")
 
-for (const el of boxes) {
-  boxes.closest("input").addEventListener("input", e=>{
-    console.log(input.value)})
+for (const el of intimacyInputs) {
+  el.addEventListener("input", e=>{
+    console.log(el.value)})
 }
 
 const result = Number(intimacyChest.value)+Number(intimacyPack.value)
