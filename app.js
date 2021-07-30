@@ -1,6 +1,6 @@
-const tabEl = document.getElementByClassName("tab-el");
-const tabElActive=document.getElementByClassName("tab-el-active")
-const tabLink=document.getElementByClassName("tab-link")
+const tabEl = document.getElementsByClassName("tab-el");
+const tabElActive=document.getElementsByClassName("tab-el-active")
+const tabLink=document.getElementsByClassName("tab-link")
 for (const el of tabEl) {el.addEventListener("click", e=>{
   console.log("Kliknięto!");
 })
