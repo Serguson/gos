@@ -132,12 +132,6 @@ function countEmeraldRing (value) {
     return emeraldRingCounted;
 }
 
-function countMasquerade (orbs, amulets, fortune, vip) {
-    const maxFortune = fortune + amulets*10;
-    const singleOrb = vip+3;
-    const maxMasquarade = orbs*singleOrb
-}
-
 for (const el of intimacyInputs) {
   el.addEventListener("input", e=>{
     el.setAttribute("value", `${el.value}`)
