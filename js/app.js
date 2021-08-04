@@ -7,7 +7,6 @@ const intimacy = document.getElementById("intimacy");
 const charm = document.getElementById("charm");
 const talent=document.getElementById("talent");
 for (const el of tabEl) {el.addEventListener("click", e=>{
-  console.log("Kliknięto!");
   for (const el of tabElActive) {el.classList.remove("tab-el-active")};
   el.classList.add("tab-el-active");
   for (const el of tabContentActive) {el.classList.remove("tab-content-active")};
@@ -146,15 +145,7 @@ function countMasquarade (orbs, fortune, vip, amulets, companions) {
     const maxProbability = Number(companions)/(Number(companions)+14);
     const minValue = 0;
     let maxValue =0;
-    let averageValue = 0;
-    console.log (maxMasquarade)
-    console.log (maxFortune)
-    console.log (maxFortuneValue)
-    console.log (maxProbability)
-    console.log(amulets)
-    console.log(fortune)
-    console.log(companions)
-      
+    let averageValue = 0;   
     if (maxMasquarade>=maxFortuneValue && maxFortuneValue>49) {
       maxValue+=maxFortuneValue;
       averageValue+=(maxFortuneValue-49)*maxProbability+49*maxProbability*0.5;
@@ -213,10 +204,8 @@ intimacyButton.addEventListener("click", e=>{
   for (const el of intimacyInputs) {
     valuesTable.push(el.value)
     }
-  console.log (valuesTable)
   resultTable.push(countIntimacyChest(valuesTable[0]), countIntimacyPack(valuesTable[1]), countAgateBracelet(valuesTable[2]), countEmeraldBracelet(valuesTable[3]), countBraceletChest(valuesTable[4]), countLazuriteNecklace(valuesTable[5]), countCarmelianNecklace(valuesTable[6]), countBlackDiamondNecklace(valuesTable[7]), countAgateRing(valuesTable[8]), countEmeraldRing(valuesTable[9]), countMasquarade(valuesTable[12],valuesTable[13], valuesTable[15], valuesTable[11], valuesTable[10]));
-  console.log(resultTable)
-
+  
   countTotal(resultTable);
   console.log (countTotal(resultTable))
 })
