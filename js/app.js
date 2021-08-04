@@ -200,7 +200,7 @@ intimacyButton.addEventListener("click", e=>{
     valuesTable.push(el.value)
     }
   console.log (valuesTable)
-  resultTable.push(countIntimacyChest(intimacyInputs[0].value));
+  resultTable.push(countIntimacyChest(valuesTable[0]));
   console.log(resultTable)
 })
 //Calculate Charm
