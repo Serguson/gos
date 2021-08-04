@@ -116,9 +116,9 @@ function countBlackDiamondNecklace (value) {
 
 function countAgateRing (value) {
     const agateRingCounted = {
-        minValue: value,
-        maxValue: value,
-        averageValue: value,
+        minValue: Number(value),
+        maxValue: Number(value),
+        averageValue: Number(value),
     }
     return agateRingCounted;
 }
@@ -153,7 +153,7 @@ function countMasquarade (orbs, fortune, vip, amulets, companions) {
     console.log (maxProbability)
     console.log(amulets)
     console.log(fortune)
-  console.log(companions)
+    console.log(companions)
       
     if (maxMasquarade>=maxFortuneValue && maxFortuneValue>49) {
       maxValue+=maxFortuneValue;
