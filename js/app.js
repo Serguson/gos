@@ -63,7 +63,7 @@ function countIntimacyPack (value) {
 }
 function countAgateBracelet (value) {
     const agateBraceletCounted = {
-        minvalue: value*2,
+        minValue: value*2,
         maxValue: value*5,
         averageValue: Math.round(value*3,5)
     }
@@ -71,8 +71,8 @@ function countAgateBracelet (value) {
 }
 function countEmeraldBracelet (value) {
     const emeraldBraceletCounted ={
-        minvalue: value*6,
-        maxvalue: value*10,
+        minValue: value*6,
+        maxValue: value*10,
         averageValue: value*8,
     }
     return emeraldBraceletCounted
@@ -198,9 +198,6 @@ function countTotal (table) {
   let averageValueTotal=0;
   const [minValue, maxValue, averageValue] = table;
   table.forEach (el=> {
-    console.log(minValue);
-    console.log(maxValue);
-    console.log(averageValue);
     minValueTotal+=el.minValue;
     maxValueTotal+=el.maxValue;
     averageValueTotal+=el.averageValue})
