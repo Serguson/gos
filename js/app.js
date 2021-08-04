@@ -192,6 +192,20 @@ function countMasquarade (orbs, fortune, vip, amulets, companions) {
     return object
   }
 
+function countTotal (table) {
+  let minValue=0;
+  let maxValue=0;
+  let averageValue=0;
+  table.forEach (el=> {
+    minValue+=el.minValue;
+    maxValue+=el.maxValue;
+    averageValue+=el.averageValue})
+  const totalValue={
+    minValue: minValue,
+    maxValue: maxValue,
+    averageValue: averageValue,}
+  return totalValue}
+
 intimacyButton.addEventListener("click", e=>{
   let resultTable = []
   let valuesTable=[]
@@ -202,21 +216,8 @@ intimacyButton.addEventListener("click", e=>{
   resultTable.push(countIntimacyChest(valuesTable[0]), countIntimacyPack(valuesTable[1]), countAgateBracelet(valuesTable[2]), countEmeraldBracelet(valuesTable[3]), countBraceletChest(valuesTable[4]), countLazuriteNecklace(valuesTable[5]), countCarmelianNecklace(valuesTable[6]), countBlackDiamondNecklace(valuesTable[7]), countAgateRing(valuesTable[8]), countEmeraldRing(valuesTable[9]), countMasquarade(valuesTable[12],valuesTable[13], valuesTable[15], valuesTable[11], valuesTable[10]));
   console.log(resultTable)
 
-  let minValueAll=0
-  let maxValueAll=0
-  let averageValueAll=0
-  
-  let totalValue = {
-  minValueAll: minValueAll,
-  maxValueAll: maxValueAll,
-  averageValueAll:averageValueAll,}
-  
-  resultTable.forEach (el => {
-      minValueAll+=el.minValue
-      maxValueAll+=el.maxValue
-      averageValueAll+=el.averageValue
-      console.log(totalValue)
-  })
+  countTotal(resultTable);
+  console.log (countTotal(resultTable))
 })
   
 //Calculate Charm
