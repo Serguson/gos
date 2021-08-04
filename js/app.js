@@ -151,6 +151,8 @@ function countMasquarade (orbs, fortune, vip, amulets, companions) {
     console.log (maxFortune)
     console.log (maxFortuneValue)
     console.log (maxProbability)
+    console.log(amulets)
+    console.log(fortune)
       
     if (maxMasquarade>=maxFortuneValue && maxFortuneValue>49) {
       maxValue+=maxFortuneValue;
