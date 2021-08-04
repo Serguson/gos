@@ -193,13 +193,16 @@ function countMasquarade (orbs, fortune, vip, amulets, companions) {
   }
 
 function countTotal (table) {
-  let minValue=0;
-  let maxValue=0;
-  let averageValue=0;
+  let minValueTotal=0;
+  let maxValueTotal=0;
+  let averageValueTotal=0;
   table.forEach (el=> {
-    minValue+=el.minValue;
-    maxValue+=el.maxValue;
-    averageValue+=el.averageValue})
+    minValueTotal+=el.minValue;
+    maxValueTotal+=el.maxValue;
+    averageValueTotal+=el.averageValue})
+  console.log (minValueTotal)
+  console.log(maxValueTotal)
+  console.log (averageValueTotal)
   const totalValue={
     minValue: minValue,
     maxValue: maxValue,
