@@ -107,9 +107,9 @@ function countCarmelianNecklace (value) {
 
 function countBlackDiamondNecklace (value) {
     const blackDiamondNecklaceCounted = {
-        minValue: value*20,
-        maxValue: value*20,
-        averageValue: value*20,
+        minValue: Number(value)*20,
+        maxValue: Number(value)*20,
+        averageValue: Number(value)*20,
     }
     return blackDiamondNecklaceCounted;
 }
@@ -143,7 +143,7 @@ function countMasquarade (orbs, fortune, vip, amulets, companions) {
     const maxMasquarade = orbs*singleOrb;
     const maxFortune = Number(fortune)+Number(amulets)*10;
     const maxFortuneValue = Math.floor(maxFortune/2);
-    const maxProbability = companions/(companions+14);
+    const maxProbability = Number(companions)/(Number(companions)+14);
     const minValue = 0;
     let maxValue =0;
     let averageValue = 0;
