@@ -122,7 +122,7 @@ function countAgateRing (value) {
     return agateRingCounted;
 }
 
-function countEmeraldRIng (value) {
+function countEmeraldRing (value) {
     const emeraldRingCounted = {
         minValue: value*2,
         maxValue: value*2,
