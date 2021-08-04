@@ -198,12 +198,12 @@ function countTotal (table) {
   let averageValueTotal=0;
   const [minValue, maxValue, averageValue] = table;
   table.forEach (el=> {
+    console.log(minValue);
+    console.log(maxValue);
+    console.log(averageValue);
     minValueTotal+=el.minValue;
     maxValueTotal+=el.maxValue;
     averageValueTotal+=el.averageValue})
-  console.log (minValueTotal)
-  console.log(maxValueTotal)
-  console.log (averageValueTotal)
   const totalValue={
     minValue: minValueTotal,
     maxValue: maxValueTotal,
