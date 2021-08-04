@@ -141,7 +141,7 @@ for (const el of intimacyInputs) {
 function countMasquarade (orbs, fortune, vip, amulets, companions) {
     const singleOrb = vip+3;
     const maxMasquarade = orbs*singleOrb;
-    const maxFortune = Number(fortune)+Number(amulets)*10);
+    const maxFortune = Number(fortune)+Number(amulets)*10;
     const maxFortuneValue = Math.floor(maxFortune/2);
     const maxProbability = companions/(companions+14);
     const minValue = 0;
