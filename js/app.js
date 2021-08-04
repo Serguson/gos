@@ -37,7 +37,11 @@ const vip=document.getElementById("intimacy-vip");
 
 const intimacyInputs=document.getElementsByClassName("intimacy-input")
 const intimacyButton=document.getElementById("intimacy-button")
-let result = 0
+
+for (const el of intimacyInputs) {
+  el.addEventListener ("input", e=>{
+    el.setAttribute("value", `${el.value}`)})
+}
 
 let resultTable = []
 
