@@ -198,7 +198,7 @@ intimacyButton.addEventListener("click", e=>{
   let valuesTable=[]
   for (const el of intimacyInputs) {
     valuesTable.push(el.value)
-    })
+    }
   console.log (valuesTable)
   resultTable.push(countIntimacyChest(intimacyInputs[0].value));
   console.log(resultTable)
