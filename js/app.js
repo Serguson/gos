@@ -195,11 +195,11 @@ function countMasquarade (orbs, fortune, vip, amulets, companions) {
   }
   
 intimacyButton.addEventListener("click", e=>{
+  let resultTable = []
   let valuesTable=[]
   for (const el of intimacyInputs) {
     valuesTable.push(el.value)
     }
-  console.log (valuesTable)
   resultTable.push(countIntimacyChest(valuesTable[0]));
   console.log(resultTable)
 })
