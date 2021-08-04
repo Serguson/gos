@@ -191,7 +191,7 @@ function countMasquarade (orbs, fortune, vip, amulets, companions) {
     }
     return object
   }
-  
+
 intimacyButton.addEventListener("click", e=>{
   let resultTable = []
   let valuesTable=[]
@@ -201,7 +201,20 @@ intimacyButton.addEventListener("click", e=>{
   console.log (valuesTable)
   resultTable.push(countIntimacyChest(valuesTable[0]), countIntimacyPack(valuesTable[1]), countAgateBracelet(valuesTable[2]), countEmeraldBracelet(valuesTable[3]), countBraceletChest(valuesTable[4]), countLazuriteNecklace(valuesTable[5]), countCarmelianNecklace(valuesTable[6]), countBlackDiamondNecklace(valuesTable[7]), countAgateRing(valuesTable[8]), countEmeraldRing(valuesTable[9]), countMasquarade(valuesTable[12],valuesTable[13], valuesTable[15], valuesTable[11], valuesTable[10]));
   console.log(resultTable)
+
+  let totalValue = {
+  minValueAll: minValueAll,
+  maxValueAll: maxValueAll,
+  averageValueAll:averageValueAll,}
+  
+  const {minValueAll, maxValueAll, averageValueAll} = totalValue
+  
+  resultTable.forEach (el => {
+      minValueAll+=el.minValue
+      maxValueAll+=el.maxValue
+      averageValueAll+=el.averageValue})
 })
+  
 //Calculate Charm
 
 const charmChest=document.getElementById("charm-chest")
