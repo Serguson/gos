@@ -28,7 +28,7 @@ const carmelianNecklace=document.getElementById("carmelian-necklace");
 const blackDiamondNecklace=document.getElementById("black-diamond-necklace");
 const agateRing = document.getElementById("agate-ring");
 const emeraldRing = document.getElementById("emerald-ring");
-const companions = document.getElementById("intimacy-companions");
+const intimacyCompanions = document.getElementById("intimacy-companions");
 const amulet = document.getElementById("intimacy-amulet");
 const energyOrbs = document.getElementById("intimacy-energy-orbs");
 const fortune = document.getElementById("intimacy-fortune");
@@ -47,9 +47,9 @@ let resultTable = []
 
 function countIntimacyChest (value) {
     const intimacyChestCounted = {
-        minValue: value*2*companions.value,
-        maxValue: value*2*companions.value,
-        averageValue: value*2*companions.value,}
+        minValue: value*2*intimacyCompanions.value,
+        maxValue: value*2*intimacyCompanions.value,
+        averageValue: value*2*intimacyCompanions.value,}
     return intimacyChestCounted;
 }
 
@@ -79,9 +79,9 @@ function countEmeraldBracelet (value) {
 
 function countBraceletChest (value) {
     const braceletChestCounted = {
-        minValue: value*companions.value,
-        maxValue: value*companions.value*5,
-        averageValue: value*companions.value*3,
+        minValue: value*intimacyCompanions.value,
+        maxValue: value*intimacyCompanions.value*5,
+        averageValue: value*intimacyCompanions.value*3,
     } 
     return braceletChestCounted;
 }
@@ -200,7 +200,8 @@ intimacyButton.addEventListener("click", e=>{
   for (const el of intimacyInputs) {
     valuesTable.push(el.value)
     }
-  resultTable.push(countIntimacyChest(valuesTable[0]));
+  console.log (valuesTable)
+  resultTable.push(countIntimacyChest(valuesTable[0]), countIntimacyPack(valuesTable[1]), countAgateBracelet(valuesTable[2]), countEmeraldBracelet(valuesTable[3]), countBraceletChest(valuesTable[4]), countLazuriteNecklace(valuesTable[5]), countCarmelianNeckalce(valuesTable[6]), countBlackDiamondNecklace(valuesTable[7]), countAgateRing(valuesTable[8]), countEmeraldRing(valuesTable[9]), countMasquarade(valuesTable[12],valuesTable[13], valuesTable[15], valuesTable[11], valuesTable[10]));
   console.log(resultTable)
 })
 //Calculate Charm
