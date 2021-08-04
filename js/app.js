@@ -201,7 +201,7 @@ intimacyButton.addEventListener("click", e=>{
     valuesTable.push(el.value)
     }
   console.log (valuesTable)
-  resultTable.push(countIntimacyChest(valuesTable[0]), countIntimacyPack(valuesTable[1]), countAgateBracelet(valuesTable[2]), countEmeraldBracelet(valuesTable[3]), countBraceletChest(valuesTable[4]), countLazuriteNecklace(valuesTable[5]), countCarmelianNeckalce(valuesTable[6]), countBlackDiamondNecklace(valuesTable[7]), countAgateRing(valuesTable[8]), countEmeraldRing(valuesTable[9]), countMasquarade(valuesTable[12],valuesTable[13], valuesTable[15], valuesTable[11], valuesTable[10]));
+  resultTable.push(countIntimacyChest(valuesTable[0]), countIntimacyPack(valuesTable[1]), countAgateBracelet(valuesTable[2]), countEmeraldBracelet(valuesTable[3]), countBraceletChest(valuesTable[4]), countLazuriteNecklace(valuesTable[5]), countCarmelianNecklace(valuesTable[6]), countBlackDiamondNecklace(valuesTable[7]), countAgateRing(valuesTable[8]), countEmeraldRing(valuesTable[9]), countMasquarade(valuesTable[12],valuesTable[13], valuesTable[15], valuesTable[11], valuesTable[10]));
   console.log(resultTable)
 })
 //Calculate Charm
