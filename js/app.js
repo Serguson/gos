@@ -191,9 +191,7 @@ function countMasquarade (orbs, fortune, vip, amulets, companions) {
   }
   
 intimacyButton.addEventListener("click", e=>{
-  const intimacyChestValue=intimacyChest.value;
-  const intimacyPackValue=intimacyPack.value
-  resultTable.push(countIntimacyChest(intimacyChestValue));
+  resultTable.push(countIntimacyChest(intimacyChest.value));
   console.log(resultTable)
 })
 //Calculate Charm
