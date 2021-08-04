@@ -50,7 +50,7 @@ function countIntimacyChest (value) {
 }
 
 function countIntimacyPack (value) {
-    const intimacyPackCOunted = {
+    const intimacyPackCounted = {
         minValue: value*10,
         maxValue: value*50,
         averageValue: value*30,
