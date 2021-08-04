@@ -70,11 +70,12 @@ function countAgateBracelet (value) {
     return agateBraceletCounted;
 }
 function countEmeraldBracelet (value) {
-    const emeraldBRaceletCounted ={
+    const emeraldBraceletCounted ={
         minvalue: value*6,
         maxvalue: value*10,
         averageValue: value*8,
     }
+    return emeraldBraceletCounted
 }
 
 function countBraceletChest (value) {
