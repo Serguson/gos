@@ -196,6 +196,7 @@ function countTotal (table) {
   let minValueTotal=0;
   let maxValueTotal=0;
   let averageValueTotal=0;
+  const [minValue, maxValue, averageValue] = table;
   table.forEach (el=> {
     minValueTotal+=el.minValue;
     maxValueTotal+=el.maxValue;
@@ -204,9 +205,9 @@ function countTotal (table) {
   console.log(maxValueTotal)
   console.log (averageValueTotal)
   const totalValue={
-    minValue: minValue,
-    maxValue: maxValue,
-    averageValue: averageValue,}
+    minValue: minValueTotal,
+    maxValue: maxValueTotal,
+    averageValue: averageValueTotal,}
   return totalValue}
 
 intimacyButton.addEventListener("click", e=>{
