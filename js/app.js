@@ -243,9 +243,9 @@ function countCharmChest (value) {
 
 function countCharmPack (value) {
   const charmPackValue = {
-    minValue: Number(value)*Number(charmCompanions.value)*10,
-    maxValue: Number(value)*Number(charmCompanions.value)*50,
-    averageValue: Number(value)*Number(charmCompanions.value)*30,}
+    minValue: Number(value)*10,
+    maxValue: Number(value)*50,
+    averageValue: Number(value)*30,}
   return charmPackValue}
 
 function countSilverHairpin (value) {
