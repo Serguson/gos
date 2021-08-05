@@ -317,6 +317,7 @@ charmButton.addEventListener("click", e=>{
   for (const el of charmInputs) {
     valuesTable.push(el.value)
     }
+  console.log(valuesTable)
   resultTable.push(countCharmChest(valuesTable[0]), countCharmPack(valuesTable[1]), countSilverHairpin(valuesTable[2]), countGoldHairpin(valuesTable[3]), countDiamondHairpin(valuesTable[4]), countHairpinChest(valuesTable[5]), countJadeBrooch(valuesTable[6]), countGemstoneBrooch(valuesTable[7]), countDiamondBrooch(valuesTable[8]), countSilverEarrings(valuesTable[9]), countGoldEarrings(valuesTable[10]));
   countTotal(resultTable);
   console.log(resultTable)
