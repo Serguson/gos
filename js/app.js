@@ -234,16 +234,16 @@ for (const el of charmInputs) {
 
 function countCharmChest (value) {
   const charmChestValue = {
-    minValue: value*charmCompanions*5,
-    maxValue: value*charmCompanions*5,
-    averageValue: value*charmCompanions*5,}
+    minValue: Number(value)*Number(charmCompanions)*5,
+    maxValue: Number(value)*Number(charmCompanions)*5,
+    averageValue: Number(value)*Number(charmCompanions)*5,}
   return charmChestValue}
 
 function countCharmPack (value) {
   const charmPackValue = {
-    minValue: value*charmCompanions*10,
-    maxValue: value*charmCompanions*50,
-    averageValue: value*charmCompanions*30,}
+    minValue: Number(value)*Number(charmCompanions)*10,
+    maxValue: Number(value)*Number(charmCompanions)*50,
+    averageValue: Number(value)*Number(charmCompanions)*30,}
   return charmPackValue}
 
 function countSilverHairpin (value) {
@@ -269,7 +269,7 @@ function countDiamondHairpin (value) {
 
 function countHairpinChest (value) {
   const hairpinChestValue = {
-    minValue: value*charmCompanions*5,
+    minValue: Number(value)*Number(charmCompanions)*5,
     maxValue: value*10,
     averageValue: Math.round(value*7.5),}
   return hairpinChestValue}
