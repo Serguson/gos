@@ -42,8 +42,6 @@ for (const el of intimacyInputs) {
     el.setAttribute("value", `${el.value}`)})
 }
 
-let resultTable = []
-
 function countIntimacyChest (value) {
     const intimacyChestCounted = {
         minValue: value*2*intimacyCompanions.value,
@@ -64,7 +62,7 @@ function countAgateBracelet (value) {
     const agateBraceletCounted = {
         minValue: value*2,
         maxValue: value*5,
-        averageValue: Math.round(value*3,5)
+        averageValue: Math.round(value*3.5)
     }
     return agateBraceletCounted;
 }
@@ -233,3 +231,93 @@ for (const el of charmInputs) {
     el.setAttribute("value", `${el.value}`)})
 }
 
+
+function countCharmChest (value) {
+  const charmChestValue = {
+    minValue: value*charmCompanions*5,
+    maxValue: value*charmCompanions*5,
+    averageValue: value*charmCompanions*5,}
+  return charmChestValue}
+
+function countCharmPack (value) {
+  const charmPackValue = {
+    minValue: value*companions*10,
+    maxValue: value*companions*50,
+    averageValue: value*companions*30,}
+  return charmPackValue}
+
+function countSilverHaripin (value) {
+  const silverHairpinValue = {
+    minValue: value*2,
+    maxValue: value*5,
+    averageValue: Math.round(value*3.5),}
+  return silverHairpinValue}
+
+function countGoldHairpin (value) {
+  const goldHairpinValue = {
+    minValue: value*6,
+    maxValue: value*10,
+    averageValue: value*8,}
+  return goldHairpinValue}
+
+function countDiamondHairpin (value) {
+  const diamondHairpinValue = {
+    minValue: value*11,
+    maxValue: value*20,
+    averageValue: Math.round(value*15.5),}
+  return diamondHairpinValue}
+
+function countHairpinChest (value) {
+  const hairpinChestValue = {
+    minValue: value*companions*5,
+    maxValue: value*10,
+    averageValue: Math.round(value*7.5),}
+  return hairpinChestValue}
+
+function countJadeBrooch (value) {
+  const jadeBroochValue = {
+    minValue: value*5,
+    maxValue: value*5,
+    averageValue: value*5,}
+  return jadeBroochValue}
+
+
+function countGemstoneBrooch (value) {
+  const gemstoneBroochValue = {
+    minValue: value*10,
+    maxValue: value*10,
+    averageValue: value*10,}
+  return gemstoneBroochValue}
+
+
+function countDiamondBrooch (value) {
+  const diamondBroochValue = {
+    minValue: value*20,
+    maxValue: value*20,
+    averageValue: value*20,}
+  return diamondBroochValue}
+
+function countSilverEarrings (value) {
+  const silverEarringsValue = {
+    minValue: Number(value),
+    maxValue: Number(value),
+    averageValue: Number(value),}
+  return silverEarringsValue}
+
+function countGoldEarrings (value) {
+  const goldEarringsValue = {
+    minValue: value*2,
+    maxValue: value*2,
+    averageValue: value*2,}
+  return goldEarringsValue}
+
+charmButton.addEventListener("click", e=>{
+  let resultTable = []
+  let valuesTable=[]
+  for (const el of charmInputs) {
+    valuesTable.push(el.value)
+    }
+  resultTable.push(countCharmChest(resultTable[0]), countCharmPack(resultTable[1]), countSilverHairpin(resultTable[2]), countGoldHairpin(resultTable[3]), countDiamondHairpin(resultTable[4]), countHairpinChest(resultTable[5]), countJadeBrooch(resultTable[6]), countGemstoneBrooch(resultTable[7]), countDiamondBrooch(resultTable[8]), countSilverEarrings(resultTable[9]), countGoldEarrings(resultTable[10]));
+  countTotal(resultTable);
+  console.log (countTotal(resultTable))
+})
