@@ -233,6 +233,8 @@ for (const el of charmInputs) {
 
 
 function countCharmChest (value) {
+  console.log(charmCompanions)
+  console.log(value)
   const charmChestValue = {
     minValue: Number(value)*Number(charmCompanions)*5,
     maxValue: Number(value)*Number(charmCompanions)*5,
