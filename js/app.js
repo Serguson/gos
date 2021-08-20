@@ -325,3 +325,24 @@ charmButton.addEventListener("click", e=>{
   console.log(resultTable)
   console.log (countTotal(resultTable))
 })
+
+//Calculate Talent
+const bookXpPack=document.getElementById("book-xp-pack")
+const bookXpChest=document.getElementById("book-xp-chest")
+const bookXpBooster=document.getElementById("book-xp-booster")
+const orbBox=document.getElementById("orb-box")
+const militaryEnhanceBadge=document.getElementById("military-enhance-badge")
+const researchEnhanceBadge=document.getElementById("research-enhance-badge")
+const politicsEnhanceBadge=document.getElementById("politics-enhance-badge")
+const prestigeEnhanceBadge=document.getElementById("prestige-enhance-badge")
+const almightyBadge=document.getElementById("almighty-badge")
+const bestSkills=document.getElementById("best-skills")
+const viziers=document.getElementById("viziers")
+
+const talentInputs=document.getElementsByClassName("talent-input")
+const talentButton=document.getElementById("talent-button")
+
+for (const el of talentInputs) {
+  el.addEventListener ("input", e=>{
+    el.setAttribute("value", `${el.value}`)})
+}
