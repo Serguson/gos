@@ -84,6 +84,10 @@ h2{
     grid-template-columns: repeat(5, 1fr);
 }
 
+#talent-grid{
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .box{
     box-sizing:border-box;
     border-style:solid;
